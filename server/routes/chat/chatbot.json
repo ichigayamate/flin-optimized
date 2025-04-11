@@ -1,0 +1,64 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I help you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+      "responses": ["Goodbye!", "See you later!", "Take care!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "I appreciate it"],
+      "responses": ["You're welcome!", "No problem!", "Happy to help!"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Can you help me?", "I need assistance", "Help me"],
+      "responses": ["Sure, what do you need help with?", "I'm here to assist you!"]
+    },
+    {
+      "tag": "about",
+      "patterns": ["FLIN", "What is this?", "What is FLIN?", "Tell me about FLIN", "What does FLIN do?"],
+      "responses": ["Flin is Indonesia’s leading debt management platform, dedicated to helping individuals reduce financial stress. We offer expert debt negotiation services, online loan consultations, and customized debt repayment plans. By consolidating multiple loans into one easy-to-manage solution, we simplify your financial journey and empower you to achieve financial freedom."]
+    },
+    {
+      "tag": "services",
+      "patterns": ["Services", "Products", "What services do you offer?", "Tell me about your services", "What can you do for me?", "How can you help me?"],
+      "response": [
+        "We offer a range of debt management services to advance your financial well-being. Our services include debt consolidation from IDR 25 Million until up to IDR 300 Million."
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": ["Requirements", "What are the eligibility requirements?", "Who can apply?", "Am I eligible for your services?", "What are the criteria for your services?"],
+      "responses": [
+        "To be eligible for our services, you must be a resident of Indonesia who already have an Identity Card, live in Jabodetabek, Bandung, Surabaya, or Bali areas, and have a steady income source with a minimum income of IDR 5 million per month. Additionally, you should have at least IDR 20 million in loan. If you meet these criteria, we can assist you in managing your debt effectively. For more information, you can visit this website: https://flin.co.id/program-dana-talangan/syarat-kelayakan/"
+      ]
+    },
+    {
+      "tag": "documents",
+      "patterns": ["Documents","What documents do I need to provide?", "What paperwork is required?", "What documents are needed for your services?", "What do I need to submit?"],
+      "responses": [
+        "To apply for our services, you will need to provide the following documents: \n1. KTP (Identity Card) \n2. Selfie \n3. Bank statement for the last 6 months \n4. Annual tax document, and \n5. Pay slip from the last 3 months. If you have any questions about the required documents, feel free to ask!"
+      ]
+    },
+    {
+      "tag": "process",
+      "patterns": ["Process","What is the process?", "How does it work?", "What are the steps?", "Can you explain the process?"],
+      "response": [
+        "You can visit our website at https://flin.co.id/program-dana-talangan/prosedur-pengajuan/ to learn more about the process."
+      ]
+    },
+    {
+      "tag": "how-to-apply",
+      "patterns": ["Apply","How do I apply?", "What is the application process?", "How can I get started?", "How to apply for your services?"],
+      "responses": [
+        "To apply for our services, you can visit our website at https://flin.co.id/formulir-pengajuan/ and follow the instructions provided. If you have any questions or need assistance, feel free to ask!"
+      ]
+    }
+  ]
+}
