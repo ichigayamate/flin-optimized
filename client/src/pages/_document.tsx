@@ -7,7 +7,7 @@ export default function Document() {
       <Head/>
       <body className="antialiased">
         <Header/>
-        <main className="p-4">
+        <main className="p-4 mt-16 max-w-[1500px]">
           <Main/>
         </main>
         <NextScript/>
