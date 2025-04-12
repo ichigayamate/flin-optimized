@@ -43,9 +43,16 @@ yarn start
 ```
 
 ## How to use
+### Part 1: Chatbot
 1. Start both `server` and `client`
 2. Open `http://localhost:3000` to access frontend
 3. To open chatbot, click the chat icon in the bottom right corner, then click the button of the question you may ask.
+
+### Part 3: API Integration
+1. Start both `server` and `client`
+2. Open `http://localhost:3000` to access frontend, then click "Apply now"
+3. Fill in the form, then click "Submit"
+4. Check the data in the database using MongoDB Compass or any other MongoDB client.
 
 ## Backend API Documentation
 Backend API Documentation is located on the [server/README.md](server/README.md).
