@@ -1,40 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Client
+This `README.md` contains all answers to part 2.
 
-## Getting Started
+**Before:**
+![Before](public/assets/before.png)
 
-First, run the development server:
+**After:**
+![After](public/assets/after.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Optimization 1: Lazy loading on image
+Only images that are not on the fold are rendered using lazy loading. In addition, this optimization not only improves LCP but also prevents layout shift caused by images that are not loaded yet. It uses `loading="lazy"` attribute on the image tag and further optimized by using `next/image` component from Next.js that improved layout stability.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Optimization 2: CSS & JS minification
+By using Next.js, the CSS and JS files are automatically minified as part of the build process, as well as unused classes from Tailwind CSS. In development build of react, all CSS and JS files are not minified to ease debugging. But during the build process, all JS and CSS files are minified, any unused JS codes are removed by using tree shaking, and unused Tailwind CSS classes are purged, which helps to reduce render-blocking resources. For comparison, this is the metrics before the minification using same test case as after optimization:
+![Before Minification](public/assets/before-minification.png)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Optimization 3: Reducing render-blocking resources
+There are ways to reduce render-blocking resources. One of them is to optimize CSS. By using Tailwind CSS, it helps to reduce render-blocking resources by only generate CSS that is used in the project. By using production build, Tailwind CSS will purge any unused CSS classes and only includes classes that are used in the project.

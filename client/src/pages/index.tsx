@@ -1,6 +1,7 @@
 import FeatureCard from "@/lib/components/features";
 import { CiCreditCard1, CiMoneyBill } from "react-icons/ci";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,9 +20,14 @@ export default function Home() {
           </div>
         </div>
         <div className="w-5/12 hidden lg:block">
-          <img
+        <Image
             src="https://pollinations.ai/p/Debt%20repayment?height=576&nologo=true&model=flux"
-            alt="Debt Repayment"
+            width={576}
+            height={576}
+            alt="Debt repayment"
+            loading="eager"
+            priority
+            className="rounded-lg shadow-lg"
           />
         </div>
       </div>
@@ -61,9 +67,14 @@ export default function Home() {
       </div>
       <div className="m-8 flex justify-center items-center gap-8">
         <div className="w-4/12 hidden lg:block">
-          <img
+        <Image
             src="https://pollinations.ai/p/Person%20paying%20debt%20with%20credit%20card?width=1024&height=576&nologo=true&model=flux"
-            alt="Person paying with credit card"
+            width={1024}
+            height={576}
+            alt="Person paying debt with credit card"
+            loading="lazy"
+            priority={false}
+            className="rounded-lg shadow-lg"
           />
         </div>
         <div className="lg:w-8/12">
