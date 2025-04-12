@@ -31,7 +31,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="text-center bg-neutral-100 p-6">
+      <div className="text-center bg-neutral-100 px-4 py-8">
         <p className="mb-4">
           <b>2 out of 10 borrowers</b> in Indonesia feel restless with high debt
           and heavy monthly installment burden. Stop adding unnecessary mental
@@ -66,10 +66,10 @@ export default function Home() {
         </div>
       </div>
       <div className="m-8 flex justify-center items-center gap-8">
-        <div className="w-3/12 hidden lg:block">
+        <div className="w-4/12 hidden lg:block">
           <Image
-            src="https://pollinations.ai/p/Person%20paying%20debt%20with%20credit%20card?width=576&height=576&nologo=true&model=flux"
-            width={576}
+            src="https://pollinations.ai/p/Person%20paying%20debt%20with%20credit%20card?width=1024&height=576&nologo=true&model=flux"
+            width={1024}
             height={576}
             alt="Person paying debt with credit card"
             loading="lazy"
@@ -77,7 +77,7 @@ export default function Home() {
             className="rounded-lg shadow-lg"
           />
         </div>
-        <div className="lg:w-9/12">
+        <div className="lg:w-8/12">
           <h2 className="font-bold text-4xl">How FLIN <span className="text-primary">helps your finances</span></h2>
           <ol className="list-decimal list-inside mt-4">
             <li>Financial health check with guaranteed solutions.</li>

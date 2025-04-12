@@ -8,7 +8,7 @@ export default function ChatbotPopover() {
       <PopoverButton as="button" className="btn btn-circle btn-secondary p-2">
         <IoChatbubble className="text-2xl" />
       </PopoverButton>
-      <PopoverPanel className="absolute bottom-12 right-0 w-96 p-4 bg-white border rounded shadow-lg">
+      <PopoverPanel unmount={false} className="absolute bottom-12 right-0 w-96 p-4 bg-white border rounded shadow-lg">
         <Chatbot />
       </PopoverPanel>
     </Popover>
