@@ -1,5 +1,4 @@
 import FeatureCard from "@/lib/components/features";
-import Image from "next/image";
 import { CiCreditCard1, CiMoneyBill } from "react-icons/ci";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 
@@ -20,14 +19,9 @@ export default function Home() {
           </div>
         </div>
         <div className="w-5/12 hidden lg:block">
-          <Image
+          <img
             src="https://pollinations.ai/p/Debt%20repayment?height=576&nologo=true&model=flux"
-            width={576}
-            height={576}
-            alt="Debt repayment"
-            loading="eager"
-            priority
-            className="rounded-lg shadow-lg"
+            alt="Debt Repayment"
           />
         </div>
       </div>
@@ -67,23 +61,26 @@ export default function Home() {
       </div>
       <div className="m-8 flex justify-center items-center gap-8">
         <div className="w-4/12 hidden lg:block">
-          <Image
+          <img
             src="https://pollinations.ai/p/Person%20paying%20debt%20with%20credit%20card?width=1024&height=576&nologo=true&model=flux"
-            width={1024}
-            height={576}
-            alt="Person paying debt with credit card"
-            loading="lazy"
-            priority={false}
-            className="rounded-lg shadow-lg"
+            alt="Person paying with credit card"
           />
         </div>
         <div className="lg:w-8/12">
-          <h2 className="font-bold text-4xl">How FLIN <span className="text-primary">helps your finances</span></h2>
+          <h2 className="font-bold text-4xl">
+            How FLIN <span className="text-primary">helps your finances</span>
+          </h2>
           <ol className="list-decimal list-inside mt-4">
             <li>Financial health check with guaranteed solutions.</li>
-            <li>As a debt negotiation service with financial institutions to get the best discounts for each of your loans.</li>
+            <li>
+              As a debt negotiation service with financial institutions to get
+              the best discounts for each of your loans.
+            </li>
             <li>Providing a single profitable refinancing option.</li>
-            <li>Pay off all debts with a single refinancing option with a financial institution.</li>
+            <li>
+              Pay off all debts with a single refinancing option with a
+              financial institution.
+            </li>
           </ol>
         </div>
       </div>
