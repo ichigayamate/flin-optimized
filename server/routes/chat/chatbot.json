@@ -28,7 +28,7 @@
     {
       "tag": "services",
       "patterns": ["Services", "Products", "What services do you offer?", "Tell me about your services", "What can you do for me?", "How can you help me?"],
-      "response": [
+      "responses": [
         "We offer a range of debt management services to advance your financial well-being. Our services include debt consolidation from IDR 25 Million until up to IDR 300 Million."
       ]
     },
@@ -49,7 +49,7 @@
     {
       "tag": "process",
       "patterns": ["Process","What is the process?", "How does it work?", "What are the steps?", "Can you explain the process?"],
-      "response": [
+      "responses": [
         "You can visit our website at https://flin.co.id/program-dana-talangan/prosedur-pengajuan/ to learn more about the process."
       ]
     },
