@@ -54,6 +54,11 @@ yarn start
 3. Fill in the form, then click "Submit"
 4. Check the data in the database using MongoDB Compass or any other MongoDB client.
 
+### Part 5: Database & Authentication Task
+1. Using postman, create user, then login using the same user
+2. Check the response, you should get a JWT token
+3. Use the JWT token to access the protected route. For references on what the protected routes are, check [API Documentation](server/README.md)
+
 ## Backend API Documentation
 Backend API Documentation is located on the [server/README.md](server/README.md).
 
