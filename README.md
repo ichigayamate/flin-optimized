@@ -48,4 +48,7 @@ yarn start
 3. To open chatbot, click the chat icon in the bottom right corner, then click the button of the question you may ask.
 
 ## Backend API Documentation
-Backend API Documentation is located on the `server/README.md`
+Backend API Documentation is located on the [server/README.md](server/README.md).
+
+## Frontend Optimization (Part 2)
+Frontend optimization is located on the [client/README.md](client/README.md).
