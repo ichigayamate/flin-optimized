@@ -64,3 +64,6 @@ Backend API Documentation is located on the [server/README.md](server/README.md)
 
 ## Frontend Optimization (Part 2)
 Frontend optimization is located on the [client/README.md](client/README.md).
+
+## AWS & WordPress Hosting Infrastructure (Part 4)
+See [wordpress-deployment/README.md](wordpress-deployment/README.md).
