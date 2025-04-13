@@ -42,9 +42,17 @@ class NotFoundError extends Error {
 
 module.exports = {
   errorHandler: (err, req, res, next) => {
-    let status = 500;
+    let status = err.status || 500;
+    let message = err.message;
 
-    if (err.name === "BadRequestError") {
+    if (err.name === "ValidationError") {
+      const errors = {};
+      status = 400;
+      Object.entries(err.errors).forEach(([key, value]) => {
+        errors[key] = value.message;
+      });
+      message = errors;
+    } else if (err.name === "BadRequestError") {
       status = 400;
     } else if (err.name === "UnauthorizedError" || err.name === "JsonWebTokenError") {
       status = 401;
@@ -56,7 +64,7 @@ module.exports = {
       console.error(err);
     }
 
-    res.status(status).json(new ResponseEntity(null, status, err.message));
+    res.status(status).json(new ResponseEntity(null, status, message));
   },
   NotFoundError,
   ForbiddenError,

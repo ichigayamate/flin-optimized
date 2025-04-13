@@ -2,6 +2,7 @@ import FeatureCard from "@/lib/components/features";
 import { CiCreditCard1, CiMoneyBill } from "react-icons/ci";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             arrangement, resolution and funding with consolidation.
           </p>
           <div className="mt-4">
-            <button className="btn btn-primary btn-xl">Apply Now</button>
+            <Link href="/inquiry" className="btn btn-primary btn-xl">Apply Now</Link>
           </div>
         </div>
         <div className="w-5/12 hidden lg:block">
